@@ -77,9 +77,9 @@ static void show_help(char *name) {
 		"Usage: %s [options]\n"
 		"\n"
 		"    -i,--pi           Program Identification code\n"
-		"                        [default: 3073]\n"
+		"                        [default: 30FE]\n"
 		"    -s,--ps           Program Service name\n"
-		"                        [default: \"radio95\"]\n"
+		"                        [default: \" R-AFERA\"]\n"
 		"    -r,--rt1           Radio Text 1\n"
 		"                        [default: (nothing)]\n"
 		"    -p,--pty          Program Type\n"
@@ -105,18 +105,19 @@ static void show_help(char *name) {
 }
 
 static void show_version() {
-	printf("MiniRDS version (radio95 Edit) %f\n", VERSION);
+	printf("MiniRDS version (radio95 Edit, for Radio Afera) %f\n", VERSION);
 }
 
 int main(int argc, char **argv) {
 	int opt;
 	char control_pipe[51];
 	struct rds_params_t rds_params = {
-		.ps = "radio95",
+		.ps = " R-AFERA",
 		.rt1 = "",
-		.pi = 0x3073,
+		.pi = 0x30FE,
 		.ecc = 0xE2,
-		.lps = "radio95 - Radio Nowotomyskie"
+		.lps = "Radio AFERA tel. 618750213"
+		.tp = 1
 	};
 	float volume = 100.0f;
 
