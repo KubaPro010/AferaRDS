@@ -559,7 +559,7 @@ void init_rds_encoder(struct rds_params_t rds_params) {
 	set_rds_lic(rds_params.lic);
 	set_rds_ecclic_toggle(1);
 	set_rds_pin_enabled(1);
-	set_rds_ct(0);
+	set_rds_ct(1);
 	set_rds_ms(1);
 	set_rds_di(DI_STEREO | DI_DPTY);
 

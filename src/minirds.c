@@ -116,8 +116,9 @@ int main(int argc, char **argv) {
 		.rt1 = "",
 		.pi = 0x30FE,
 		.ecc = 0xE2,
-		.lps = "Radio AFERA tel. 618750213"
-		.tp = 1
+		.lps = "Radio AFERA tel. 618750213",
+		.tp = 1,
+		.pty = 11
 	};
 	float volume = 100.0f;
 
